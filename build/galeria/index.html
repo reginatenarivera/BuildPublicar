@@ -10,14 +10,12 @@
 		<meta name="keywords" content="Ilustración,retratos,paisajes,animación,logos,poster,personajes">
 		<meta name="author" content="staRTR">
 		<title>Galeria | staRTR</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/398b08d3d7.js" crossorigin="anonymous"></script> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		
-		
-	 
-
-	<link rel="stylesheet" href="/assets/818d5826.f7d0644d.css" /></head>
+	<link rel="stylesheet" href="/assets/818d5826.884a3642.css" /></head>
 
 	<!--Body-->
 	<body>
@@ -28,20 +26,19 @@
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 
-			 <div class="collapse navbar-collapse justify-content-end"></div>
+			 <div class="collapse navbar-collapse justify-content-end collapse-show"></div>
 				<ul class="navbar-nav">
-				<ul class="navbar-nav justify-content-end">
 					<li class="nav-item">
-						<a class="nav-link" href="/">Inicio</a>
+						<a class="nav-link active" aria-current="page" href="/">Inicio</a>
 					</li>
 				</ul>
-				</ul>
+				
 				
 				<div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Galeria
 					</button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu dropdown-menu-dark">
 					  <li><a class="dropdown-item" href="/GaleriaPaisajes">Paisajes</a></li>
 					  <li><a class="dropdown-item" href="/GaleriaRetratos">Retratos</a></li>
 					  <li><a class="dropdown-item" href="/GaleriaPoster">Poster</a></li>
@@ -60,7 +57,7 @@
 					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Servicios
 					</button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu dropdown-menu-dark">
 					  <li><a class="dropdown-item" href="/ServDigital">Digital</a></li>
 					  <li><a class="dropdown-item" href="/ServImpreso">Impreso</a></li>
 					</ul>
@@ -83,13 +80,13 @@
 		<main>
 		
         <!--Seccion Imagenes -->
-		<img src="Tree.png" class="img-fluid" alt="Tree">
+		<img src="/Extras/Tree.png" class="img-fluid" alt="Tree">
 	<section class="container-fluid px-5 py-5 Imagenes">
-		<div class="position-absolute top-50 start-50 translate-middle">
+		<div class="position-absolute top-50 start-50 translate-middle" background-color="white">
 			<h2>Sin el arte, la crudeza de la realidad haría que el mundo fuese insoportable</h2>
 			<h2>George Bernard Shaw</h2>
 		</div>
-		<div class="container-fluid px-5 py-5 Gal">
+		<div class="container-fluid px-5 py-2 Gal">
 			<div class="text-center">
 				<h1>Galería</h1>
 			</div>
@@ -199,7 +196,7 @@
             </div>-->
    
 		<!--Seccion Habilidades extra -->
-		<section class="container-fluid px-5 py-5 HabilidadesEx">
+		<section class="container-fluid px-5 py-0 HabilidadesEx">
 			<div class="text-center">
 				<h1>Habilidades Extra</h1>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/1azFht1SaEk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -207,38 +204,25 @@
 		</section>
     </main>
 		<footer>
-			<div class="col text-center"> © Copyright 2022 Regina Tena staRTR </div>	
-			<!--<div class="col text center">
-				<h2>staRTR 2022</h2>
-			</div> -->
+			<div class="text-center Botones">
+					<a href="https://www.facebook.com/RegistaRTR/"> 
+						<img src="/Botones/Face.png" class="rounded" alt="BtnFace" width="5%" height="70%" id="imbtnFace">
+					</a>
+					<a href="https://www.instagram.com/regiter6/?hl=en">
+						<img src="/Botones/Insta.png" class="rounded" alt="BtnInsta" width="5%" height="70%" id="imbtnInsta">
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=525548227895">
+						<img src="/Botones/Whats.png" class="rounded" alt="BtnWhats" width="5%" height="70%" id="imbtnWhats">
+					</a>			
+						<div class="col text-center justify-content-end Texto"> 	
+							<h3>© Copyright 2022 Regina Tena staRTR</h3>
+						</div>		
+			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 		<script src="/dist/Galeria.js"></script>
 	</body>
 </html>
-
-<!-- <style is:global>
-	*{
-		padding: 0;
-		margin: 0;
-		overflow-x:hidden;
-	}
-	div{
-		overflow-y:hidden;
-	}
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #440b3a 30%, rgb(242, 153, 245) 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #690b5a;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style> -->
 
 <!-- <style>
 	main {

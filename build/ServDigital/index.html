@@ -10,14 +10,12 @@
 		<meta name="keywords" content="Tamaño,formatos,entrega,información,costos,eficiente,rápido,ilustración,trabajo,pixeles">
 		<meta name="author" content="staRTR">
 		<title>staRTR|Digital</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/398b08d3d7.js" crossorigin="anonymous"></script> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		
-		
-	 
-
-	<link rel="stylesheet" href="/assets/818d5826.f7d0644d.css" /></head>
+	<link rel="stylesheet" href="/assets/818d5826.884a3642.css" /></head>
 
 	<!--Body-->
 	<body>
@@ -28,20 +26,19 @@
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 
-			 <div class="collapse navbar-collapse justify-content-end"></div>
+			 <div class="collapse navbar-collapse justify-content-end collapse-show"></div>
 				<ul class="navbar-nav">
-				<ul class="navbar-nav justify-content-end">
 					<li class="nav-item">
-						<a class="nav-link" href="/">Inicio</a>
+						<a class="nav-link active" aria-current="page" href="/">Inicio</a>
 					</li>
 				</ul>
-				</ul>
+				
 				
 				<div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Galeria
 					</button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu dropdown-menu-dark">
 					  <li><a class="dropdown-item" href="/GaleriaPaisajes">Paisajes</a></li>
 					  <li><a class="dropdown-item" href="/GaleriaRetratos">Retratos</a></li>
 					  <li><a class="dropdown-item" href="/GaleriaPoster">Poster</a></li>
@@ -60,7 +57,7 @@
 					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Servicios
 					</button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu dropdown-menu-dark">
 					  <li><a class="dropdown-item" href="/ServDigital">Digital</a></li>
 					  <li><a class="dropdown-item" href="/ServImpreso">Impreso</a></li>
 					</ul>
@@ -94,9 +91,10 @@
 		</section>
 
 		<!---Seccion Tamaños -->
-		<section class="container-fluid px-5 py-5 Tamaños">
+		<section class="container-fluid px-5 py-0 Tamaños">
 			<div class="text-center">
-				<h1>Tamaños</h1>
+				<h1>Tamaño</h1>
+				<p>72ppp (pixeles por pulgada)</p>
 			</div>
 		</section>
 
@@ -105,25 +103,109 @@
 		<section class="container-fluid px-5 py-5 Formatos">
 			<div class="text-center">
 				<h1>Formatos</h1>
-			</div>
-			
+			<div class="accordion accordion-flush" id="accordionFlushExample">
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingOne">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+						PNG
+					</button>
+				  </h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<br>
+							PNG es un formato de imagen sin pérdidas. <br>
+							Esto quiere decir que se puede guardar la imagen tantas veces como se quiera <br>
+							sin perder calidad. <br>
+							Dentro de los formatos de imágenes sin compresión, este es el más utilizado hoy en día en web.<br>
+							Es muy útil para fondos de la web, iconos o gráficos que no son fotografías.
+					</div>
+				</div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingTwo">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+					  JPG
+					</button>
+				  </h2>
+				  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body"> 
+						<br>
+							JPG es un buen formato ya que nos permite comprimir hasta 10 veces el tamaño de una fotografía. <br>
+							Con JPG se pueden guardar fotografías con gran colorido y el tamaño del archivo será bastante ligero,<br>
+							lo que lo hace ideal para utilizarse en un sitio web.
+					</div>
+				  </div>
+				</div>
+				<div class="accordion-item">
+				  <h2 class="accordion-header" id="flush-headingThree">
+					<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+					  PDF
+					</button>
+				  </h2>
+				  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<br>
+							El pdf incluirá toda la información de mapa de bits pero también incluirá toda la información vectorial,<br>
+							 lo cual nos asegura mantener la calidad de los textos e ilustraciones.<br>
+							 Es compatible entre mac y pc y puede abrirse con Acrobat Reader, aplicación gratuita.<br>
+							 Se puede convertir al perfil CMYK deseado, asegurándonos que nuestro archivo viaja con el perfil que hemos elegido.
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>			
 		</section>
 
 		<!---Seccion Forma de entrega -->
-		<section class="container-fluid px-5 py-5 Entrega">
+		<section class="container-fluid px-5 py-2 Entrega">
 			<div class="text-center">
 				<h1>Forma de entrega</h1>
+				<!--TABLA DE FORMA DE ENTREGA -->
+				<div class="col px-5 py-2 Tabla">
+					<table>
+						<tr>
+							<th>Correo Electrónico</th>
+							<th>Presencial</th>
+						</tr>
+						<tr>
+							<td>En memoria USB</td>
+							<td>Con 2 posibles cambios </td>
+						</tr>
+						<tr>
+							<td>Formato a elegir</td>
+							<td>Con 2 posibles cambios</td>
+						</tr>
+					</table>
+				</div>
+
 			</div>
 		</section>
 
 		<!---Seccion Costos -->
-		<section class="container-fluid px-5 py-5 CostosD">
+		<section class="container-fluid px-5 py-2 CostosD">
 			<div class="text-center">
 				<h1>Costos</h1>
 					<div class="col text-center py-2">
 						<p>
-							Los costos varían dependiendo la forma de entrega a elegir 
+							Los costos varían dependiendo la forma de entrega a elegir y la complejidad del trabajo
 						</p>
+						<!--TABLA COSTOS -->
+						<div class="col  px-5 py-2 Tabla">
+							<table>
+								<tr>
+									<th>Forma de Entrega</th>
+									<th>Costos</th>
+								</tr>
+								<tr>
+									<td>Correo Electrónico</td>
+									<td>Desde $300.00 pesos</td>
+								</tr>
+								<tr>
+									<td>Presencial</td>
+									<td>Desde $500.00 pesos</td>
+								</tr>
+							</table>
+						</div>
 
 					</div>
 			</div>
@@ -132,35 +214,22 @@
 
 	</main>
 		<footer>
-			<div class="col text-center"> © Copyright 2022 Regina Tena staRTR </div>	
-			<!--<div class="col text center">
-				<h2>staRTR 2022</h2>
-			</div> -->
+			<div class="text-center Botones">
+					<a href="https://www.facebook.com/RegistaRTR/"> 
+						<img src="/Botones/Face.png" class="rounded" alt="BtnFace" width="5%" height="70%" id="imbtnFace">
+					</a>
+					<a href="https://www.instagram.com/regiter6/?hl=en">
+						<img src="/Botones/Insta.png" class="rounded" alt="BtnInsta" width="5%" height="70%" id="imbtnInsta">
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=525548227895">
+						<img src="/Botones/Whats.png" class="rounded" alt="BtnWhats" width="5%" height="70%" id="imbtnWhats">
+					</a>			
+						<div class="col text-center justify-content-end Texto"> 	
+							<h3>© Copyright 2022 Regina Tena staRTR</h3>
+						</div>		
+			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 		<script src="/dist/Galeria.js"></script>
 	</body>
 </html>
-
-<!-- <style is:global>
-	*{
-		padding: 0;
-		margin: 0;
-		overflow-x:hidden;
-	}
-	div{
-		overflow-y:hidden;
-	}
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #440b3a 30%, rgb(242, 153, 245) 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #690b5a;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style> -->

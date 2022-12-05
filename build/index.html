@@ -10,14 +10,12 @@
 		<meta name="keywords" content="Artista Digital, obras de arte, ilustracion vectorial, vectores, ilustradora, Demo Reel, CV, servicios, costos">
 		<meta name="author" content="staRTR">
 		<title>staRTR.</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<script src="https://kit.fontawesome.com/398b08d3d7.js" crossorigin="anonymous"></script> 
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		
-		
-	 
-
-	<link rel="stylesheet" href="/assets/818d5826.f7d0644d.css" /></head>
+	<link rel="stylesheet" href="/assets/818d5826.884a3642.css" /></head>
 
 	<!--Body-->
 	<body>
@@ -28,20 +26,19 @@
 				<span class="navbar-toggler-icon"></span>
 			  </button>
 
-			 <div class="collapse navbar-collapse justify-content-end"></div>
+			 <div class="collapse navbar-collapse justify-content-end collapse-show"></div>
 				<ul class="navbar-nav">
-				<ul class="navbar-nav justify-content-end">
 					<li class="nav-item">
-						<a class="nav-link" href="/">Inicio</a>
+						<a class="nav-link active" aria-current="page" href="/">Inicio</a>
 					</li>
 				</ul>
-				</ul>
+				
 				
 				<div class="dropdown">
 					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Galeria
 					</button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu dropdown-menu-dark">
 					  <li><a class="dropdown-item" href="/GaleriaPaisajes">Paisajes</a></li>
 					  <li><a class="dropdown-item" href="/GaleriaRetratos">Retratos</a></li>
 					  <li><a class="dropdown-item" href="/GaleriaPoster">Poster</a></li>
@@ -60,7 +57,7 @@
 					<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
 					  Servicios
 					</button>
-					<ul class="dropdown-menu">
+					<ul class="dropdown-menu dropdown-menu-dark">
 					  <li><a class="dropdown-item" href="/ServDigital">Digital</a></li>
 					  <li><a class="dropdown-item" href="/ServImpreso">Impreso</a></li>
 					</ul>
@@ -81,41 +78,41 @@
 			</div>
 		</nav>		  
 		<main>
-    
-		<!--Carusel-->
+
+		<img src="/Paisajes/Mar.png" alt="Mar" id="mar" width="100%" height="700px">
+
+		<!--Carusel
 			<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
 				<div class="carousel-indicators">
 			  		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 			  		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
 			  		<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
 				</div>
-				<div class="center">staRTR</div>
-				<div class="position-absolute justify-content:center">
-					<h1>staRTR</h1>
-					<h1>Ilustradora Digital</h1>
-				</div>
 			
 			<div class="carousel-inner">
-				<div class="carousel-item active" style="height: 100vh;">
-				<img src="/Poster/Rodamundos.jpg" class="d-block w-100" alt="Imagen 1">
-<div class="carousel-caption d-none d-md-block">
-  <h5>staRTR</h5>
-  <p>Ilustradora</p>
-</div>
+				<div class= "carousel-item active" style="height: 100vh;">
+				<CaruselItem
+				fuente="/Poster/Rodamundos.jpg"
+				imgDescript="Imagen 1"
+				titulo="staRTR"
+				cuerpo="Ilustradora" 
+				/>
 			  </div>
-			  <div class="carousel-item " style="height: 100vh;">
-				<img src="/Poster/ClaudyStairs.jpg" class="d-block w-100" alt="Imagen 2">
-<div class="carousel-caption d-none d-md-block">
-  <h5></h5>
-  <p></p>
-</div>
+			  <div class="carousel-item "style="height: 100vh;">
+				<CaruselItem
+				fuente="/Poster/ClaudyStairs.jpg"
+				imgDescript="Imagen 2"
+				titulo=""
+				cuerpo=""
+				/>
 			  </div>
 			  <div class="carousel-item" style="height: 100vh;">
-				<img src="/Poster/Chaos.png" class="d-block w-100" alt="Imagen 3">
-<div class="carousel-caption d-none d-md-block">
-  <h5></h5>
-  <p></p>
-</div>
+				<CaruselItem
+				fuente="/Poster/Chaos.png"
+				imgDescript="Imagen 3"
+				titulo=""
+				cuerpo=""
+				/>
 			  </div>
 			</div>
 						
@@ -128,6 +125,7 @@
 			  <span class="visually-hidden">Next</span>
 			</button>
 		  </div>
+		  -->
 	
 					
 		
@@ -157,7 +155,7 @@
 		-->
 	
 	<!--Seccion Sobre Mi -->
-	<section class="container-fluid px-5 py-5 Sobremi">
+	<section class="container-fluid px-5 py-5 Sobremi" id="Sobremi">
 		<div class="text-center">
 			<h1>Sobre mí <span class="text-gradient">RegiTr</span></h1>
 		</div>
@@ -175,9 +173,11 @@
 							Me gusta poder variar mi contenido.
 						</span>
 				</p>
-				<div class="px-5 py-10 Boton">
+
+				<!--ANIMACIÓN BOTÓN -->
+				<div class="px-5 py-10 Botones">
 					<a href="/Me">
-						<img src="/Botones/Mas.png" alt="BtnSM " width="30%">
+						<img src="/Botones/Me.png" alt="BtnMe" id="btnMe" width="30%">
 					</a>
 				</div>
 			</div>
@@ -202,71 +202,22 @@
 
 
 	<!--Seccion Galería -->          
-		<section class="container-fluid px-5 py-4 Galeria">
+		<section class="container-fluid px-5 py-3 Galeria">
 			<div class="col text center">	
 				<h1> Galeria</h1>
 			</div>
-			<div class="row row-cols-1 row-cols-md-3 g-5">
+		<div class="row">
 			<div class="col">
-				
-			  <div class="card">
-				<img src="/Paisajes/Nubes.png" class="card-img-top" alt="Nubes">
-				<div class="card-body">
-				  <h5 class="card-title">Paisajes</h5>
-				  <p class="card-text">Encontrarás ilustraciones de Paisajes basados en mis sueños o mi imaginación</p>
-				 <!-- <a href="/GaleriaPaisajes" class="btn btn-primary">Más</a>--> 
-				</div>
-				
-			  </div>
-			</div>
-			<div class="col">
-			  <div class="card">
-				<img src="/Personajes/caminando.png" class="card-img-top" alt="JK Caminando">
-				<div class="card-body">
-				  <h5 class="card-title">Personajes</h5>
-				  <p class="card-text">Encontrarás secuencias de ilustraciones para hacer una animación</p>
-				 <!--  <a href="/GaleriaPersonajes" class="btn btn-primary">Más</a> --> 
-				</div>
-			  </div>
-			</div>
-			<div class="col">
-			  <div class="card">
-				<img src="/Poster/collins.png" class="card-img-top" alt="Collins">
-				<div class="card-body">
-				  <h5 class="card-title">Poster</h5>
-				  <p class="card-text">Encontrarás ilustraciones de tipo poster de diferentes temas</p>
-				  <!-- <a href="/GaleriaPoster" class="btn btn-primary">Más</a> --> 
-				</div>
-			  </div>
-			</div>
-			<div class="col">
-			  <div class="card">
-				<img src="/Retratos/K.jpg" class="card-img-top" alt="K">
-				<div class="card-body">
-				  <h5 class="card-title">Retratos</h5>
-				  <p class="card-text">Encontrarás ilustraciones de algunos rostros de famosos que me gustan</p>
-				  <!-- <a href="/GaleriaRetratos" class="btn btn-primary">Más</a> --> 
-				</div>
-			  </div>
-			</div>
-		   <div class="col">
-			<div class="card">
-			  <img src="/Logos/Recurso 2.png" class="card-img-top" alt="Recurso2">
-			  <div class="card-body">
-				<h5 class="card-title">Logos</h5>
-				<p class="card-text">Encontrarás algunas propuestas de Logos que realicé para un despacho y para mi Universidad</p>
-				<!-- <a href="/GaleriaLogos" class="btn btn-primary">Más</a>  --> 
-			</div>
-			</div>
-		  </div>
-		  	<div class="container-fluid px-5 py-10 Boton">
-				<a href="/galeria">
-				<img src="/Botones/Galeria.png" alt="BtnGal" width="50%">
-				</a>
+				<img src="/Paisajes/Japon.png" alt="Japon" width="100%">
+					<div class="container-fluid px-5 py-10 Botones">
+							<a href="/galeria">
+								<img src="/Botones/Galeria.png" alt="BtnGal" id="btnGal" width="10%">	
+							</a>
+					</div>
 			</div>
 		</div>
 	</section>
-
+	
 
 	<!--Seccion Servicios -->
 	<section class="container-fluid px-5 py-3 Servicios">
@@ -289,19 +240,18 @@
 						</div>
 					</div>
 					
-							<div class="col">
-								<div class="float-end">
-									<div class="card">
-										<img src="Poster/FCreditos2.png" class="card-img-top" alt="Fondo">
-											<div class="card-body">
-												<h5 class="card-title">Digitales</h5>
-												<p class="card-text">Podrás revisar los formatos y costos de las entregas digitales</p>
-												<a href="/ServDigital" class="btn btn-primary">Más</a>
-											</div>
-									</div>
+						<div class="col">
+							<div class="float-end">
+								<div class="card">
+									<img src="Poster/FCreditos2.png" class="card-img-top" alt="Fondo">
+										<div class="card-body">
+											<h5 class="card-title">Digitales</h5>
+											<p class="card-text">Podrás revisar los formatos y costos de las entregas digitales</p>
+											<a href="/ServDigital" class="btn btn-primary">Más</a>
+										</div>
 								</div>
 							</div>
-					
+						</div>					
 				</div>
 			</div>
 		</div>			
@@ -320,24 +270,28 @@
 	<!--Seccion Descargables o Contenido de valor -->
 	<section class="container-fluid  Descargables">
 		<div class="col text center">	
-			<h1> Descargables</h1>		
-			<img src="/Botones/CV.png" class="rounded float-start" alt="CV">
-			<img src="/Botones/Portafolio.png" class="rounded float-end" alt="Portafolio">
+			<h1> Descargables</h1>	
+				<div class="align-items-center BtnDesc py-3">
+					<img src="/Botones/CV.png" class="align-items-center" alt="CV">
+						<a href="/PDF/CV.pdf" class="boton align-items-baseline" download="CV">Descargar</a>
+					<img src="/Botones/Portafolio.png" class="align-items-center" alt="Portafolio"> 				
+						<a href="/PDF/Portafolio.pdf" class="boton align-items-baseline" download="Portafolio">Descargar</a>
+				</div>					
 		</div>
 	</section>
 
 
 	
 	<!--Seccion Proyecto -->
-	<section class="container-fluid px-5 py-5 Proyecto">
+	<section class="container-fluid py-5 Proyecto" id="Proyecto">
 		<div class="col text center">	
 			<h1> Proyecto</h1>
 			<div class="col-lg-12">
 				<img src="/Extras/proyecto.png" alt="Imagen de fondo" width="100%" height="100%" id="imPro">					
-				<div class="Boton">
-					<a href="/Proyecto">
-						<img src="/Botones/Mas.png" alt="Botón más" width="10%" id="imbtnMas">
-					</a>
+				<div class="Botones aligne-items-center">
+						<a href="/Proyecto">
+							<img src="/Botones/Mas.png" alt="Botonmás" id="btnMas" width="10%">
+						</a>
 				</div>
 			</div>
 		</div>		
@@ -356,60 +310,35 @@
 					Me pondré en contacto contigo enseguida.
 				</p>
 			</div>
-		</div>
-		
-	<section class="container-fluid text-center Mapa">
-	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481226.0297329502!2d-99.10318346553748!3d19.559707621805657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8251fa0b807%3A0x5c910fde5e5b0b9c!2sProgreso%20Nacional%2C%20Mexico%20City%2C%20CDMX!5e0!3m2!1sen!2smx!4v1668045389958!5m2!1sen!2smx" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="imMap"></iframe>
-	</section>	
-			<div class="text-center py-3">
-				<a href="#">
-					<img src="/Botones/Correo.png" class="rounded" alt="BtnCorreo" width="5%" height="70%" id="imbtnCorreo">
-				</a>
-				<a href="https://www.instagram.com/regiter6/?hl=en">
-					<img src="/Botones/Insta.png" class="rounded" alt="BtnInsta" width="5%" height="70%" id="imbtnInsta">
-				</a>
-				<a href="https://api.whatsapp.com/send?phone=525548227895">
-					<img src="/Botones/Whats.png" class="rounded" alt="BtnWhats" width="5%" height="70%" id="imbtnWhats">
-				</a>
-			</div>
+		</div>		
+		<section class="container-fluid text-center Mapa">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d481226.0297329502!2d-99.10318346553748!3d19.559707621805657!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1f8251fa0b807%3A0x5c910fde5e5b0b9c!2sProgreso%20Nacional%2C%20Mexico%20City%2C%20CDMX!5e0!3m2!1sen!2smx!4v1668045389958!5m2!1sen!2smx" width="50%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="imMap"></iframe>
+		</section>				
 	</section>
 
 	
 
 </main>
 		<footer>
-			<div class="col text-center"> © Copyright 2022 Regina Tena staRTR </div>	
-			<!--<div class="col text center">
-				<h2>staRTR 2022</h2>
-			</div> -->
+			<div class="text-center Botones">
+					<a href="https://www.facebook.com/RegistaRTR/"> 
+						<img src="/Botones/Face.png" class="rounded" alt="BtnFace" width="5%" height="70%" id="imbtnFace">
+					</a>
+					<a href="https://www.instagram.com/regiter6/?hl=en">
+						<img src="/Botones/Insta.png" class="rounded" alt="BtnInsta" width="5%" height="70%" id="imbtnInsta">
+					</a>
+					<a href="https://api.whatsapp.com/send?phone=525548227895">
+						<img src="/Botones/Whats.png" class="rounded" alt="BtnWhats" width="5%" height="70%" id="imbtnWhats">
+					</a>			
+						<div class="col text-center justify-content-end Texto"> 	
+							<h3>© Copyright 2022 Regina Tena staRTR</h3>
+						</div>		
+			</div>
 		</footer>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 		<script src="/dist/Galeria.js"></script>
 	</body>
 </html>
-
-<!-- <style is:global>
-	*{
-		padding: 0;
-		margin: 0;
-		overflow-x:hidden;
-	}
-	div{
-		overflow-y:hidden;
-	}
-	:root {
-		--accent: 124, 58, 237;
-		--accent-gradient: linear-gradient(45deg, rgb(var(--accent)), #440b3a 30%, rgb(242, 153, 245) 60%);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		background-color: #690b5a;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-			Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style> -->
 
 <!-- <style>
 	
